@@ -4,7 +4,12 @@
   <mat-card-title-group>
     <mat-card-title>{{ article.title }}</mat-card-title>
     <mat-card-subtitle>
-      <p>By {{article.author}} on {{ article.publishedAt | date: 'medium'  }}</p></mat-card-subtitle>
+      @if(article.author) {
+      <p>By {{article.author}} on {{ article.publishedAt | date: 'medium'  }}</p>
+      } @else {
+      <p>On {{ article.publishedAt | date: 'medium'  }}</p>
+      }
+    </mat-card-subtitle>
   </mat-card-title-group>
   </mat-card-header>
   <mat-card-content>
