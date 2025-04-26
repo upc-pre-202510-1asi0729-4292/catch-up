@@ -1,12 +1,11 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Source} from '../../model/source.entity';
-import {MatListItemAvatar, MatListItemLine} from '@angular/material/list';
+import {MatListItem} from '@angular/material/list';
 
 @Component({
   selector: 'app-source-item',
   imports: [
-    MatListItemAvatar,
-    MatListItemLine
+    MatListItem
   ],
   templateUrl: './source-item.component.html',
   styleUrl: './source-item.component.css'
