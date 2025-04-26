@@ -19,6 +19,7 @@ export class ArticleAssembler {
         url:'',
         urlToLogo:''
       },
+      author: resource.author || '',
       title: resource.title,
       description: resource.description || '',
       url: resource.url,

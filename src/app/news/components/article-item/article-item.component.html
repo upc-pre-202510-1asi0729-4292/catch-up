@@ -3,7 +3,8 @@
   <mat-card-header>
   <mat-card-title-group>
     <mat-card-title>{{ article.title }}</mat-card-title>
-    <mat-card-subtitle> {{ article.publishedAt | date: 'medium'  }}</mat-card-subtitle>
+    <mat-card-subtitle>
+      <p>By {{article.author}} on {{ article.publishedAt | date: 'medium'  }}</p></mat-card-subtitle>
   </mat-card-title-group>
   </mat-card-header>
   <mat-card-content>

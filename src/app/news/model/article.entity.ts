@@ -1,6 +1,7 @@
 import {Source} from './source.entity';
 
 export class Article {
+  author: string;
   title: string;
   description: string;
   url: string;
@@ -9,6 +10,7 @@ export class Article {
   source: Source;
 
   constructor() {
+    this.author = '';
     this.title = '';
     this.description = '';
     this.url = '';
